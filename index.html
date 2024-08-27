@@ -1,194 +1,330 @@
 <!DOCTYPE html>
-<html lang="en"data-theme="light">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assainment-3</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- font Aowsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- tailwindvs daisyul -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                brand:'#ABEF5F'
-              }
-             
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assainment-3</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font Aowsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwindvs daisyul -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            brand: '#ABEF5F'
           }
+
         }
-      </script>
+      }
+    }
+  </script>
 </head>
+
 <body>
-   <header class="bg-gradient-to-b from-zinc-100 to-white">
+  <header class="bg-gradient-to-b from-zinc-100 to-white">
     <nav class="w-11/12 mx-auto">
       <div class="navbar ">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-   <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-   <h5>Home</h5>
-   <li><a>survise</a></li>
-    <li><a>portfolio</a></li>
-    <li><a>blogs</a></li>
-    <li><a>contact us</a></li>
-              
-            </ul>
-          </div>
+         
           <div class="gap-3">
-            <span class=" text-black bg-brand px-1 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
-          <a class="text-xl font-bold ">Rinterio</a>
+            <span class=" text-black bg-brand px-1 rounded-full"><i
+                class="fa-solid fa-arrow-right -rotate-45"></i></span>
+            <a class="text-xl font-bold ">Rinterio</a>
           </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-               
-       <ul class="p-2 flex items-center text-lg">
-        <h5 class="text-xl font-bold">Home</h5>
-        <li><a>Survise</a></li>
-        <li class=""><a>portfolio</a></li>
-        <li><a>blogs</a></li>
-        <li><a>contact us</a></li>    
-          </ul>
+        <div class="navbar-center block lg:hidden ">
+          
+         <div class="justify-end">
+          
+         </div>
+            <ul class="p-2 lg:flex items-center text-lg  hidden px-1">
+              <h5 class="text-xl font-bold">Home</h5>
+              <li><a>Survise</a></li>
+              <li class=""><a>portfolio</a></li>
+              <li><a>blogs</a></li>
+              <li><a>contact us</a></li>
+            </ul>
+           
         </div>
         <div class="navbar-end">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-           <div>
-            <button class="p-2 bg-white-500">
-              <span class=" p-1 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></span>
-             </button>
-             <button class="p-2 ">
-              <span class=" rounded-full py-6 px-5">
+
+          <div class="hidden lg:block">
+            <button class="p-2 ">
+              <span class="bg-white p-2 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </button>
+            <button class="p-2 ">
+              <span class="bg-white  rounded-full p-2">
                 <i class="fa-solid fa-cart-shopping"></i></span>
-                
-             </button>
-           </div>
-          <a class=" font-bold px-5 py-3 bg-brand rounded-full">Book Consult <span class=" text-white bg-black px-1 rounded-full "><i class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+
+            </button>
+          </div>
+          <div class="hidden lg:block">
+            <a class=" font-bold px-5 py-3 bg-brand rounded-full">Book Consult <span
+              class=" text-white bg-black px-1 rounded-full "><i
+                class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost ">
+              <i class="fa-solid fa-bars text-black"></i>
+            </div>
+            <ul class="menu menu-sm ri dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <h5>Home</h5>
+              <li><a>survise</a></li>
+              <li><a>portfolio</a></li>
+              <li><a>blogs</a></li>
+              <li><a>contact us</a></li>
+
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- main header section -->
-     <section class="mt-10">
+    <section class="mt-10">
       <div class=" grid grid-row sm:grid-col">
         <!-- image -->
-         <div class="max-w-md mx-auto flex justify-center">
+        <div class="max-w-md mx-auto flex justify-center">
           <img src="assets/banner.png" alt="">
-         </div>
+        </div>
         <div class="hero-content text-center">
-          <div class="ml-64">
-            <h1 class="text-5xl font-bold"> A barn house of this design has a <br> striking appearance</h1>
-            <p class="font-semibold py-1 mt-8 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-           <div class="mt-8 mb-6">
-            <a class=" font-bold px-5 py-3 bg-[rgb(171,239,95)]/50 rounded-full">View Details <span class=" text-white bg-[rgb(171,239,95)]  px-1 rounded-full "><i class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
-            
-           </div>
+          <div class="">
+            <h1 class="text-5xl font-bold lg:pl-48"> A barn house of this design has a <br> striking appearance</h1>
+            <p class="font-semibold py-1 mt-8 lg:pl-56">Usually indicates that you have an answer to that earlier in the conversation or they are referring to something <br>On your iPhone, the Bell with a line through it means </p>
+            <div class="mt-8 mb-6 lg:pl-56">
+              <a class=" font-bold px-5 py-3 bg-[rgb(171,239,95)]/50 rounded-full">View Details <span
+                  class=" text-white bg-[rgb(171,239,95)]  px-1 rounded-full "><i
+                    class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+
+            </div>
           </div>
         </div>
       </div>
-     </section>
-   </header>
+    </section>
+  </header>
 
-   <!-- as-3-second part-main section -->
-    <main class=" bg-gray-100 mt-20">
-      <img class="mt-14" src="assets/Vector.png" alt="">
-      <!-- main-first-section -->
-     <section class="w-{80%} mx-auto mt-11">
+  <!-- as-3-second part-main section -->
+  <main class=" bg-gray-100  ">
+   <div class=" ">
+    <img class=" pt-10 ml-10" src="assets/Vector.png" alt="">
+   </div>
+    <!-- main-first-section -->
+    <section class="mt-10 w-[80%] mx-auto">
       <!-- text-part -->
       <div class="grid lg:grid-cols-2 sm:grid-col gap-10">
-      <div class="">
-        <button class=" font-bold px-4 p-1 bg-white rounded-full"><i class="fa-solid fa-arrow-right "></i> About Us</button>
-      <h1 class="text-3xl font-bold p-3">We design thoughtful, <br> liveable spaces</h1>
-      <p class="font-medium pb-3">The barn house captivates with its blend of rustic charm and <br>
-        modern sophistication, featuring weathered wood, sleek metal accents.</p>
-        <!-- card section -->
-        <div class=" flex bg-white py-5 rounded-xl gap-7 ">
-          <div class="ml-4">
-           <img src="assets/commercial.png" alt="">
+        <div class="">
+          <button class=" font-bold px-4 p-1 bg-white rounded-full"><i class="fa-solid fa-arrow-right "></i> About
+            Us</button>
+          <h1 class="text-3xl font-bold p-3">We design thoughtful, <br> liveable spaces</h1>
+          <p class="font-medium pb-3">Usually indicates that you have an answer to that earlier in the conversation or they are referring to something On your iPhone, the Bell with a </p>
+          <!-- card section -->
+          <div class=" flex bg-white py-5 rounded-xl gap-7 ">
+            <div class="ml-4">
+              <img src="assets/commercial.png" alt="">
+            </div>
+            <div class="">
+              <h4 class="card-title font-semibold">Commercial</h5>
+                <p>Usually indicates that you have an answer to that earlier in</p>
+            </div>
           </div>
-           <div class="">
-             <h4 class="card-title font-semibold">Commercial</h5>
-             <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-           </div>
-         </div>
           <!-- card-2 -->
-         <div class=" flex bg-white py-5 rounded-xl gap-7 mt-5">
-          <div class="ml-4">
-           <img src="assets/residential.png" alt="">
+          <div class=" flex bg-white py-5 rounded-xl gap-7 mt-5">
+            <div class="ml-4">
+              <img src="assets/residential.png" alt="">
+            </div>
+            <div class="">
+              <h4 class="card-title font-semibold">Residential</h5>
+                <p>Usually indicates that you have an answer to that earlier in the conversation </p>
+            </div>
           </div>
-           <div class="">
-             <h4 class="card-title font-semibold">Residential</h5>
-             <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-           </div>
+        </div>
+        <!-- image -->
+        <div class="w-full">
+          <img src="assets/Rectangle.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- main seconnd section -->
+    <section class="w-11/12 mx-auto mt-11">
+      <!-- banner section -->
+      <div class="text-center">
+        <button class=" font-bold px-4 p-1 m-3 bg-white rounded-full"><i class="fa-solid fa-arrow-right "></i>How we
+          works</button>
+        <h1 class="text-3xl font-bold pb-3">Our Works Process</h1>
+        <p class="font-semibold">Usually indicates that you have an answer to that earlier in the conversation or they are referring to something On your iPhone, the Bell with a line through it means</p>
+      </div>
+
+      <!-- forth card -->
+      <div class="mx-auto  grid lg:grid-cols-4 sm:grid-cols-1 mt-7 mb-14 w-9/12 gap-5">
+        <div class=" h-48 bg-[#E7C1D3] p-4 rounded-2xl">
+          <img src="assets/concept.png" alt="">
+          <h6 class="font-bold p-1">Concept</h6>
+          <p class="font-medium">Usually indicates that you have an answer to that earlier in the conversation or </p>
+        </div>
+
+        <div class=" h-48 bg-[#EFDA6E] p-4 rounded-2xl">
+          <img src="assets/flow-chart.png" alt="">
+          <h6 class="font-bold p-1">Design Process</h6>
+          <p class="font-medium">Usually indicates that you have an answer to that earlier in the conversation or </p>
+        </div>
+
+        <div class=" h-48 bg-[#A4DAC3] p-4 rounded-2xl">
+          <img src="assets/vision.png" alt="">
+          <h6 class="font-bold p-1">Supervision</h6>
+          <p class="font-medium">Usually indicates that you have an answer to that earlier in the conversation or </p>
+        </div>
+
+        <div class=" h-48 bg-[#77AAEA] p-4 rounded-2xl">
+          <img src="assets/budget-planning.png" alt="">
+          <h6 class="font-bold p-1">Budget Planning</h6>
+          <p class="font-medium">Usually indicates that you have an answer to that earlier in the conversation or </p>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- main section 2 -->
+
+    <section class="bg-white pt-20">
+      <div class="text-center">
+        <a class=" mt-12 font-bold  px-12 py-1 bg-[rgb(171,239,95)]/30 rounded-full"><i
+            class="fa-solid fa-arrow-right mr-2"></i> View Details</a>
+        <h1 class="text-4xl font-bold mt-6">Our Latest Portfolio</h1>
+        <p class="font-medium p-6">TextFree is a mobile application and web service that allows users to send and receive text messages, as well as make <br>and receive VoIP phone calls, for free over the internet. The</p>
+      </div>
+      <!-- image section -->
+       <div class="lg:w-9/12 w-11/12 border mx-auto ">
+        <div class="grid lg:grid-cols-12 grid-cols-1 gap-8  ">
+          <div class="lg:col-span-8 border grid lg:grid-cols-2 sm:grid-cols-1 items-center shadow-xl p-5 rounded-xl gap-5">
+            <div class=" mb-4 ">
+              <img class="w-full" src="assets/img1.png" alt="">
+            </div>
+            <div>
+              <h6 class="text-xl font-bold pb-4">Commercial</h6>
+              <p class="font-medium pb-3">TextFree is a mobile application and web service that allows users to send and receive text messages, as well as make and receive VoIP phone calls, for free over the internet. The</p>
+              <a class=" font-bold pt-5">View Details <span
+                  class=" text-white bg-[rgb(171,239,95)]  px-1 rounded-full "><i
+                    class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+            </div>
+          </div>
+          <!-- image div -->
+          <div class=" lg:col-span-4    items-center shadow-xl p-5 rounded-xl">
+            <img class="lg:w-full" src="assets/img2.png" alt="">
+          </div>
+        
+        <!-- second image section -->
+         <!-- class="mx-auto w-9/12 pt-7 grid grid-cols-3"> -->
+          <div class="lg:col-span-3  shadow-2xl p-5 rounded-xl">
+            <img class="w-full" src="assets/img3.png" alt="">
+          </div>
+  
+          <div class="lg:col-span-6 grid lg:grid-cols-2  items-center shadow-xl p-5 rounded-xl gap-5">
+            <div class="">
+              <img class="w-full" src="assets/img4.png" alt="">
+            </div>
+            <div>
+              <h6 class="text-xl font-bold pb-4">Commercial</h6>
+              <p class="font-medium pb-3">TextFree is a mobile application and web service that allows users to send and receive text messages, as well as make <br>and receive VoIP phone calls, for free over the internet. The</p>
+              <a class=" font-bold pt-5">View Details <span
+                  class=" text-white bg-[rgb(171,239,95)]  px-1 rounded-full "><i
+                    class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+            </div>
+          </div>
+  
+          <div class="lg:col-span-3 lg:grid-cols-2 shadow-xl p-5 rounded-xl  ">
+            <img class="lg:w-full w-44" src="assets/img5.png" alt="">
+          </div>
+  
+  
+  
+        </div>
+       </div>
+      
+    </section>
+  </main>
+   <!-- input button section -->
+  <div style="background-image: url(./assets/bg.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div  class="w-6/12 mx-auto gap-7">
+      <div class="lg:pt-10 pt-4 text-center">
+        <p><a class="bg-[rgba(172,239,95,0.44)] lg:py-1 lg:px-2  rounded-lg"><span class=""><i
+          class="fa-solid fa-arrow-right "></i></span>Let’s Connect </a></p>
+        <h1 class="text-2xl font-bold p-4">Let’s Discuss Next Project</h1>
+        <p class="">TextFree is a mobile application and web service that allows users to send and receive text messages, as well as make and receive </p>
+      </div>
+      <!-- input button -->
+      <div class="gap-3 grid lg:grid-cols-2 grid-cols-1">
+        <div class="gap-3 ">
+          <div class=" ">
+            <input type="text" placeholder="first name*" class="input input-bordered left- lg:w-96 rounded-full pt-4" />
+          </div>
+         <div class="">
+          <input type="text" placeholder="Last name*" class="input input-bordered lg:w-96  rounded-full" />
+         </div>
+         </div>
+    
+         <div class=" gap-8 ">
+         <div class=" ">
+          <input type="text" placeholder="phone namber*" class="input input-bordered lg:w-96  rounded-full" />
+         </div>
+          <div class="">
+            <input  type="text" placeholder="email name*" class="input input-bordered lg:w-96  rounded-full" />
+          </div>
          </div>
       </div>
-      <!-- image -->
-       <div class="w-full">
-        <img src="assets/Rectangle.png" alt="">
-       </div>
+      <div class="lg:h-56 pt-6">
+        <label class="form-control">
+          
+          <textarea class="textarea textarea-bordered h-48 " placeholder="Write your message here"></textarea>
+         
+        
+         
       </div>
      
-     </section>
+       
+        <p><a class="text-2xl text-white bg-brand font-bold lg:px-72 px-8 rounded-2xl"><span class=" text-black bg-[rgb(171,239,95)]  px-1 rounded-full "><i
+          class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio </a></p>
+       
+      </div>
+  </div>
 
-     <!-- main seconnd section -->
-      <section class="w-11/12 mx-auto mt-11">
-        <!-- banner section -->
-         <div class="text-center">
-          <button class=" font-bold px-4 p-1 m-3 bg-white rounded-full"><i class="fa-solid fa-arrow-right "></i>How we works</button>
-          <h1 class="text-3xl font-bold pb-3">Our Works Process</h1>
-          <p class="font-semibold">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-         </div>
 
-         <!-- forth card -->
-          <div class="mx-auto  grid lg:grid-cols-4 sm:grid-cols-1 mt-7 mb-14 w-9/12 gap-2">
-            <div class=" h-48 bg-[#E7C1D3] p-4 rounded-2xl">
-              <img src="assets/concept.png" alt="">
-              <h6 class="font-bold p-1">Concept</h6>
-              <p class="font-medium">The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
-            </div>
+  <footer class="mt-10 bg-black "> 
+    <div class="text-center pt-10">
+      <p><a class="text-2xl text-white font-bold pt-5"><span class=" text-black bg-[rgb(171,239,95)]  px-1 rounded-full "><i
+        class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio </a></p>
+      <p class="pt-5 text-gray-400">TextFree is a mobile application and web service that allows users to send and receive text messages,<br> as well as of make and receive text</p>
+    </div>
 
-            <div class=" h-48 bg-brand p-4 rounded-2xl">
-              <img src="assets/flow-chart.png" alt="">
-              <h6 class="font-bold p-1">Design Process</h6>
-              <p class="font-medium">The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
-            </div>
+    <div class="mt-9 text-center lg:ml-96 grid lg:grid-cols-9 grid-cols-1 gap-10 text-white ">
+                <p>Home</p>
+                <p>survise</p>
+                <p>portfolio</p>
+                <p>blogs</p>
+                <p>contact </p>
+              
+    </div>
+   <div class="text-center pt-16">
+    <button class=" font-bold px-5 py-3 mb-16 bg-brand rounded-full">Book Consult <span
+      class=" text-white bg-black px-1 rounded-full "><i
+        class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
+   </div>
+  </footer>
 
-            <div class=" h-48 bg-brand p-4 rounded-2xl">
-              <img src="assets/vision.png" alt="">
-              <h6 class="font-bold p-1">Supervision</h6>
-              <p class="font-medium">The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
-            </div>
 
-            <div class=" h-48 bg-brand p-4 rounded-2xl">
-              <img src="assets/budget-planning.png" alt="">
-              <h6 class="font-bold p-1">Budget Planning</h6>
-              <p class="font-medium">The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
-            </div>
-          </div>
-      </section>
-    </main>
-    <!-- main section 2 -->
-       <main>
-        <section>
-          <div class="text-center">
-            <a class=" font-bold  px-12 py-1 bg-[rgb(171,239,95)]/30 rounded-full"><i class="fa-solid fa-arrow-right mr-2"></i> View Details</a>
-          </div>
-        </section>
-       </main>
-    <main>
 
-    </main>
 </body>
+
 </html>
